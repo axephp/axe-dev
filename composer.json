@@ -1,0 +1,22 @@
+{
+    "name": "axephp/axe-dev",
+    "description": "AxE PHP Framework",
+    "type": "project",
+    "require": {
+        "axephp/blade": "dev-master"
+    },
+    "require-dev": {
+        "axephp/blade": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+         "App\\": "system/axe/",
+         "User\\Models\\": "user/models",
+         "User\\Pages\\": "user/pages",
+         "User\\Middlewares\\": "user/mddlewares",
+         "User\\Events\\": "user/events"
+         }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev"
+}

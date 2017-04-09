@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	font-family: 'Titillium Web', cursive;
+	color: rgb(100, 100, 100);
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	background: #558B2F;
+	padding: 5px 0;
+}
+
+/* AxE Logo */
+#axe-logo {
+	width: 200px;
+	margin-left: 10px;
+	float: left;
+	color: #FFFFFF;
+	font-size: 28px;
+}
+
+#axe-x-label {
+	color: #FF6666;
+	font-size: 35px;
+	font-weight: bold;
+	padding: 0px 2px;
+}
+
+/* Float Declarations */
+.floatleft { float: left; }
+.floatright { float: right; }
+.clear { clear:both; }
+
+.container {
+	max-width: 940px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+/* Main Section : Custom Jumbotron */
+section.main{
+	width: 100%;
+	height: 600px;
+	padding: 5px 0;
+	background: url(/images/axe_design.png) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.maincontent {
+	width: 100%;
+	padding-top: 65px;
+	color: #222222;
+	margin-right: 10px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	text-align: center;
+}
+
+section.main h1 {
+	margin-top: 20px;
+	font-size: 400%;
+	padding-top: 50px;
+	font-family: 'Poiret One', cursive;
+	line-height: 1em;
+	font-weight: normal;
+}
+
+section.main h2 {
+	font-size: 250%;
+	margin: 10px;
+	font-family: 'Poiret One', cursive;
+	line-height: 1em;
+	font-weight: normal;
+}
+
+section.main p {
+
+	margin-top: 90px;
+	font-size: 190%;
+	margin-bottom: 60px;
+	color: #FF6666;
+}
+
+
+
+/* Footer */
+footer{
+  width: 100%;
+  top: 670px;
+  position: fixed;
+  font-size: 115%;
+  padding-bottom: 25px;
+  border-top: 1.5px solid #AAAAAA;
+}
+
+footer p{
+	width: 250px;
+  	padding-top: 20px;
+	float: right;
+	color: #303030;
+}
