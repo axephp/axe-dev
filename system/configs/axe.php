@@ -9,7 +9,9 @@ return[
 	],
 
 	'aliases'=>[
-		'db' => \Blade\Database\Database::class
+		'db' => \Blade\Database\Database::class,
+
+		'session' => \Blade\Session\Session::class
 	],
 
 	'libs'=>[
@@ -20,7 +22,7 @@ return[
 
 		'config',
 
-		'route',
+		'current',
 
 		'logs',
 
