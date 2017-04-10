@@ -11,7 +11,7 @@ return[
 	'aliases'=>[
 		'db' => \Blade\Database\Database::class,
 
-		'session' => \Blade\Session\Session::class
+		'session' => \Blade\Session\Session::class,
 
 		'auth'	=> \Blade\Auth\Auth::class
 	],
