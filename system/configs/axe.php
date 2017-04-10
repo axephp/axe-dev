@@ -30,6 +30,8 @@ return[
 
 		'events',
 
+		'auth'
+
 		#\Blade\XXXX\XXX::class,
 
 		# 'alias' => \Blade\YYYY\YYYY:class
