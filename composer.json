@@ -3,10 +3,7 @@
     "description": "AxE PHP Framework",
     "type": "project",
     "require": {
-        "axephp/blade": "dev-master"
-    },
-    "require-dev": {
-        "axephp/blade": "dev-master"
+        "axephp/blade": "master"
     },
     "autoload": {
         "psr-4": {
@@ -18,5 +15,6 @@
          }
     },
     "license": "MIT",
+    "prefer-stable" : true, 
     "minimum-stability": "dev"
 }
