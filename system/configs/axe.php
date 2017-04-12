@@ -11,8 +11,6 @@ return[
 	'aliases'=>[
 		'db' => \Blade\Database\Database::class,
 
-		'auth'	=> \Blade\Auth\Auth::class,
-
 		'hash' => \Blade\Hash\Hasher::class
 	],
 
@@ -28,11 +26,7 @@ return[
 
 		'events',
 
-		'auth'
-
-		#\Blade\XXXX\XXX::class,
-
-		# 'alias' => \Blade\YYYY\YYYY:class
+		'auth',
 
 	]
 

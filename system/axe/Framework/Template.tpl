@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>@element('pageTitle');</title>
+<html>
+<head>
+  <title>@element('pageTitle');</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
 
-    <!-- Bootstrap -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
 
-      <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
 
-      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Jura|Lekton" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Jura|Lekton">
 
     @element('pageHead');
 
@@ -35,6 +29,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
-
+    
   </body>
 </html>
