@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css">
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Jura|Lekton">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
     @element('pageHead');
 
