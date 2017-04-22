@@ -3,7 +3,7 @@
     "description": "AxE PHP Framework",
     "type": "project",
     "require": {
-        "axephp/blade": "master"
+        "axephp/blade": "dev-master"
     },
     "autoload": {
         "psr-4": {
