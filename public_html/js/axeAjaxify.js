@@ -4,7 +4,6 @@ function axeAjaxify(infoz){
 	var onsuccess = infoz.success;
 	var valUrl = infoz.validate;
 
-
 	var inp = $('#' + frmId + ' :input');
 	
 	
@@ -58,17 +57,18 @@ function axeAjaxify(infoz){
 
 	function getInfo(field, info, returned){
 		var a = $.ajax({
-			method: "GET",
+			method: "POST",
 			url: valUrl, 
 			data: {[field]: info},
 	        success: function(msg) {
 	            // Call this function on success
+	            //console.log(msg);
+
 	        	ret =  doneAction( msg, field );
 	        	returned(ret);
-
 	        },
-	        error: function() {
-	            alert('Error occured');
+	        error: function(e) {
+	            alert(e.responseText);
 	        }
 		});
 
@@ -79,9 +79,15 @@ function axeAjaxify(infoz){
 
 	function submitInfo(form, successed){
 
-		var data = JSON.stringify( form.serializeArray());
+		var rawdata = {};
 
-		//alert(data);
+		jQuery.each(form.serializeArray(), function (i, field) {
+			rawdata[field.name] = field.value;
+		});
+
+		var data = JSON.stringify(rawdata);
+
+		//console.log(data);
 
 		var action = $(form).attr('action');
 		var method = $(form).attr('method');
@@ -89,10 +95,17 @@ function axeAjaxify(infoz){
 	    $.ajax({
 	        url: action,
 	        type: method,
-	        data: data,
+	        data: rawdata,
 	        success: function(response) {
-	           successed(response);
-	        }            
+	        	if (response.error == "phperror") {
+					alert(response.message);
+				}else{
+	           		successed(response);
+	       		}
+	        }  ,
+	        error: function (e) {
+	        	alert(e.responseText);
+	        }         
 	    });
 	}
 
