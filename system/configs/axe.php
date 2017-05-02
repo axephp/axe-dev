@@ -4,7 +4,8 @@ return[
 	
 	'managers'=>[
 
-		Blade\Managers\RouteManager::class
+		Blade\Managers\RouteManager::class, 
+		Blade\Validation\ValidationManager::class
 
 	],
 
@@ -12,6 +13,7 @@ return[
 		'db' => \Blade\Database\Database::class,
 
 		'hash' => \Blade\Hash\Hasher::class
+
 	],
 
 	'libs'=>[
@@ -27,6 +29,10 @@ return[
 		'events',
 
 		'auth',
+
+		'hash',
+
+		'validator'
 
 	]
 
